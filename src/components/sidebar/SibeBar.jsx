@@ -19,7 +19,7 @@ import PropTypes from "prop-types"
 const Sidebar = ({ sideBarOpen,setSideBarOpen }) => {
   return (
     <>
-      <div className={`flex-1 max-w-[240px] z-[200] bg-[#232F47] min-h-[100vh] max-h-[100vh] overflow-y-scroll small-scroll pb-10 flex flex-col absolute lg:relative w-full top-0 left-0  lg:translate-x-0 ${sideBarOpen ? "translate-x-[0%]" : "translate-x-[-100%]"} transition`}>
+      <div className={`flex-1 max-w-[240px] z-[200] bg-[#232F47] min-h-[100vh] max-h-[100vh] overflow-y-scroll small-scroll pb-10 flex flex-col fixed lg:relative w-full top-0 left-0  lg:translate-x-0 ${sideBarOpen ? "translate-x-[0%]" : "translate-x-[-100%]"} transition`}>
         {/* Logo */}
         <div className="p-2 flex items-center justify-between">
           <img src="./logo.png" alt="" className="max-w-[110px] mt-3" />

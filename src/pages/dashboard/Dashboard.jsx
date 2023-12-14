@@ -12,7 +12,7 @@ const Dashboard = ({ setSideBarOpen, sideBarOpen }) => {
     return (
         <div className="flex">
             <SibeBar sideBarOpen={sideBarOpen} setSideBarOpen={setSideBarOpen} />
-            <div className="flex-1 min-h-[100vh] lg:max-h-[100vh] lg:overflow-y-auto">
+            <div className="flex-1 min-h-[100vh] sm:max-h-[100vh] overflow-y-auto relative">
                 <TopBar setSideBarOpen={setSideBarOpen} sideBarOpen={sideBarOpen} />
                 <div className='w-full p-3'>
                     <Outlet />

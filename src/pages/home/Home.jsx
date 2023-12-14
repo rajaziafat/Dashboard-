@@ -276,7 +276,9 @@ const Home = () => {
         <div className="col-span-4 1200:col-span-2 row-span-2 bg-[#232F47]  p-3">
           <BifChartBox />
         </div>
-
+        <div className="flex flex-col items-center col-span-4 1200:col-span-2 justify-center text-3xl font-[500] space-y-[10px] min-h-[170px]  bg-[#232F47]  p-2">
+          Best Year Ever
+        </div>
       </div>
       {/* Data Table  */}
       <div className="w-full">

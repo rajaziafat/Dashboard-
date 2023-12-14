@@ -39,3 +39,22 @@
 .small-scroll::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+.MuiDataGrid-root{
+ color: white !important;
+ border: none !important;
+}
+.MuiDataGrid-toolbarContainer{
+  color: white !important;
+}
+.MuiSvgIcon-root{
+  color: white !important;
+}
+.MuiInputBase-input{
+  color: white !important;
+}
+.MuiToolbar-gutters{
+  color: white;
+}
+.MuiDataGrid-toolbarContainer{
+  flex-direction: row-reverse !important;
+}
