@@ -238,47 +238,47 @@ const ProfitEarnedData = {
 
 const Home = () => {
   return (
-    <div className="w-full flex flex-col gap-[20px]">
+    <div className="w-full space-y-[20px]">
       {/* Top Stats  */}
-      <div className="w-full grid sm:grid-cols-2 900:grid-cols-3 1200:grid-cols-4 gap-[15px] 1200:gap-[20px]">
-        <div className="min-h-[190px] max-h-[200px] bg-[#232F47]  p-2">
+      <div className="w-full grid grid-cols-4 gap-[20px]">
+        <div className="min-h-[190px] max-h-[200px] col-span-4 700:col-span-2 1200:col-span-1  bg-[#232F47] p-2 w-full">
           <ChartBox {...OrdersData} />
         </div>
-        <div className="min-h-[190px]  max-h-[200px] bg-[#232F47]  p-2">
+        <div className="min-h-[190px]  max-h-[200px] col-span-4 700:col-span-2 1200:col-span-1  bg-[#232F47]  p-2 w-full">
           <ChartBox {...customersData} />
         </div>
-        <div className="min-h-[190px]  max-h-[200px] bg-[#232F47]  p-2">
+        <div className="min-h-[190px]  max-h-[200px] col-span-4 700:col-span-2 1200:col-span-1  bg-[#232F47]   p-2 w-full">
           <ChartBox {...LocationsData} />
         </div>
-        <div className="min-h-[190px]  max-h-[200px] 900:col-span-3 1200:col-span-1  bg-[#232F47]  p-2">
+        <div className="min-h-[190px] col-span-4 700:col-span-2 1200:col-span-1 max-h-[200px] bg-[#232F47]  p-2">
           <ChartBox {...productsData} />
         </div>
       </div>
       {/* Middle Data  */}
       <div className="grid grid-cols-4 w-full gap-[20px]">
         {/* Pie Chart  */}
-        <div className="col-span-4 800:col-span-3 1200:col-span-2 sm:row-span-2 bg-[#232F47]  p-2">
+        <div className="bg-[#232F47] col-span-4 1200:col-span-3 p-2">
           <PieChartCom />
         </div>
-        <div className="flex flex-col col-span-4 sm:col-span-2 800:col-span-1  justify-between space-y-[10px]   bg-[#232F47]  p-2">
+        <div className="flex flex-col sm:justify-between space-y-[10px] col-span-4 sm:col-span-2 1200:col-span-1  bg-[#232F47]  p-2">
           <h1 className="font-[600] text-xl">
             Profit Earned
           </h1>
           <BarChartLines {...ProfitEarnedData} />
         </div>
-        <div className="flex flex-col col-span-4 sm:col-span-2 800:col-span-1 justify-between space-y-[10px]   bg-[#232F47]  p-2">
+        <div className="flex flex-col  sm:justify-between space-y-[10px] col-span-4 sm:col-span-2 1200:col-span-1 bg-[#232F47]  p-2">
           <h1 className="font-[600] text-xl">
             Total Visits
           </h1>
           <BarChartLines {...vistsData} />
         </div>
         {/* Pie Chart  */}
-        <div className="col-span-4 1200:col-span-2 row-span-2 bg-[#232F47]  p-3">
+        <div className=" bg-[#232F47] col-span-4 1200:col-span-3  p-3">
           <BifChartBox />
         </div>
-        <div className="flex flex-col items-center col-span-4 1200:col-span-2 justify-center text-3xl font-[500] space-y-[10px] min-h-[170px]  bg-[#232F47]  p-2">
+        {/* <div className="flex flex-col items-center col-span-1 justify-center text-3xl font-[500] space-y-[10px] min-h-[170px]  bg-[#232F47]  p-2">
           Best Year Ever
-        </div>
+        </div> */}
       </div>
       {/* Data Table  */}
       <div className="w-full">
