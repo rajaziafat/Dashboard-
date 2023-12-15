@@ -9,7 +9,7 @@ const data = [
 
 const PieChartCom = () => {
     return (
-        <div className='w-full h-full space-y-5'>
+        <div className='w-full h-full space-y-5 max-h-[580px]'>
             <div>
                 <ResponsiveContainer width="99%" height={300}>
 

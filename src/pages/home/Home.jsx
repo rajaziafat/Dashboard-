@@ -241,23 +241,23 @@ const Home = () => {
     <div className="w-full flex flex-col gap-[20px]">
       {/* Top Stats  */}
       <div className="w-full grid sm:grid-cols-2 900:grid-cols-3 1200:grid-cols-4 gap-[15px] 1200:gap-[20px]">
-        <div className="min-h-[190px]  bg-[#232F47]  p-2">
+        <div className="min-h-[190px] max-h-[200px] bg-[#232F47]  p-2">
           <ChartBox {...OrdersData} />
         </div>
-        <div className="min-h-[190px]  bg-[#232F47]  p-2">
+        <div className="min-h-[190px]  max-h-[200px] bg-[#232F47]  p-2">
           <ChartBox {...customersData} />
         </div>
-        <div className="min-h-[190px]  bg-[#232F47]  p-2">
+        <div className="min-h-[190px]  max-h-[200px] bg-[#232F47]  p-2">
           <ChartBox {...LocationsData} />
         </div>
-        <div className="min-h-[190px] 900:col-span-3 1200:col-span-1  bg-[#232F47]  p-2">
+        <div className="min-h-[190px]  max-h-[200px] 900:col-span-3 1200:col-span-1  bg-[#232F47]  p-2">
           <ChartBox {...productsData} />
         </div>
       </div>
       {/* Middle Data  */}
       <div className="grid grid-cols-4 w-full gap-[20px]">
         {/* Pie Chart  */}
-        <div className="col-span-4 800:col-span-3 1200:col-span-2 row-span-2 bg-[#232F47]  p-2">
+        <div className="col-span-4 800:col-span-3 1200:col-span-2 sm:row-span-2 bg-[#232F47]  p-2">
           <PieChartCom />
         </div>
         <div className="flex flex-col col-span-4 sm:col-span-2 800:col-span-1  justify-between space-y-[10px]   bg-[#232F47]  p-2">

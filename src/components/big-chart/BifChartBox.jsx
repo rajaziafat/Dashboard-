@@ -47,7 +47,7 @@ const data = [
 ];
 const BifChartBox = () => {
     return (
-        <div className='w-full h-full max-h-[300px] space-y-6'>
+        <div className='w-full h-full max-h-[350px] sm:max-h-[300px] space-y-6'>
             <h1 className='text-2xl font-[600]'>
                Total Orders
             </h1>

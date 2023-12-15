@@ -6,7 +6,7 @@ import PropTypes from "prop-types"
 const ChartBox = ({ icon, title, number, durationText, dayaKey, chartColor, percentage, chartData }) => {
     const DynamicIcon = icon
     return (
-        <div className="w-full h-full flex justify-between px-2">
+        <div className="w-full h-full max-h-[200px] flex justify-between px-2">
             {/* Box Info */}
             <div className="flex-[2] h-full flex flex-col justify-between">
                 {/* title  */}
